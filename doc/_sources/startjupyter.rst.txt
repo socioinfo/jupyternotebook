@@ -1,0 +1,220 @@
+.. |clearboth| raw:: html
+
+   <div style="clear:both;"></div>
+
+.. https://shirabeta.net/How-to-write-link-with-target-blank-in-reST.html#result2
+
+.. |br| raw:: html
+
+   <br />
+
+==========================
+ JupyterNotebook を動かす
+==========================
+
+Python などを Web ブラウザ上で記述・実行できる環境 Jupyter Notebook を動かします。
+
+Jupyter パッケージのインストール
+==================================
+   
+1. PyCharm はショートカットが異常に多いので起動のたびに Tip of the Day で紹介されます。一通り読んだら :guilabel:`Close`
+
+.. figure:: ../images/jupyter1.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+2. :guilabel:`Python Packages` をクリック
+
+.. figure:: ../images/jupyter2.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+3. 画面が分割されるので
+4. ``jupyter`` を入力します ① （未確認だけど、ここから 7. にジャンプしてもいいはず）
+5. jupyter 文字が入ったパッケージがテキトーにしかもたくさんでてくるけど上下にスクロールさせ ②
+6. :guilabel:`jupyter` そのものをクリック ③
+7. :guilabel:`Install` ④
+
+.. figure:: ../images/jupyter3.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+7. :guilabel:`ユーザーアカウント制御` は、 :guilabel:`はい`
+
+.. figure:: ../images/jupyter4.png
+   :scale: 80
+   :align: left
+
+|clearboth|
+
+
+
+Python プログラムを Jupyter Notebook 上で動かしてみます
+=======================================================
+
+.. _Jupyter_PyCharm:
+
+PyCharm
+-------
+
+1. :guilabel:`📁PythonProject` をクリック ①
+
+.. note::
+   :ref:`search_conda.exe` (:numref:`search_conda.exe`) の 2 で別フォルダを指定していたら、 :guilabel:`PythonProject` とは出てきません。そのときは、一番上の階層の  :guilabel:`📁` をクリックしましょう [#]_
+
+2. 次に :guilabel:`File` ②
+
+.. figure:: ../images/jupyter5.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+3. ずらっとでてきますが二つ目の :guilabel:`New...`
+
+.. figure:: ../images/jupyter6.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+3. :guilabel:`Jupyter Notebook`
+
+.. figure:: ../images/jupyter7.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+4. ``test`` と入力し Enter
+
+.. figure:: ../images/jupyter8.png
+   :scale: 120
+   :align: left
+
+|clearboth|
+
+4. ``test.ipynb`` というファイルができているはずです
+
+.. figure:: ../images/jupyter9.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+5. ``test.ipynb`` をクリックします ①
+6. 下記 Python プログラムをコピペします ②
+
+.. literalinclude:: test.ipynb
+   :language: python
+   :linenos:
+
+7. :guilabel:`▶` をクリック ③ メニューが広がります
+
+.. figure:: ../images/jupyter10.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+8. :guilabel:`▶Run Cell` で実行しましょう
+
+.. figure:: ../images/jupyter11.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+9. Jupyter Notebook Web サーバーが立ち上がります（後ほどみてみます）
+
+.. figure:: ../images/jupyter12.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+10. ``hello, suzuki`` が実行結果です。実行したプログラムの吹き出し直下に表示されます ④
+11. :guilabel:`Register project interpreter as a kernel` をクリックしてください ⑤
+
+.. figure:: ../images/jupyter13.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+.. warning::
+   :guilabel:`Register project interpreter as a kernel` をクリックした瞬間に下記の画面がでてくるときは :ref:`anaconda_path` (:numref:`anaconda_path`) の手順を間違えています。やり直しましょう
+
+.. figure:: ../images/jupyter14.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+.. note::
+   :guilabel:`Windows セキュリティの重要な警告` は次のように対処します。
+
+12. :guilabel:`☑` プライベートネットワーク（ホームネットワークや社内ネットワークなど） ⑥
+13. :guilabel:`□` パブリックネットワーク（空港、喫茶店など）（非推奨） ⑦
+14. :guilabel:`アクセスを許可する` ⑧
+
+.. figure:: ../images/jupyter15.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+.. [#] この一番上階層を、プロジェクトルートといい、プルジェクトルートの下のファイル（とディレクトリ）群でプロジェクトを構成します。プロジェクト毎に Python のバージョン、インストールするモジュールを互いに干渉させることなくインストールすることが可能です
+
+Web ブラウザ
+------------
+
+:ref:`Jupyter_PyCharm` (:numref:`Jupyter_PyCharm`)からの続きです。
+     
+1. :guilabel:`Jupyter` をクリック ①
+2. :guilabel:`Event Log` をクリック ② 
+
+.. figure:: ../images/jupyter16.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+3. 下の段が分割され、右側に Event Log が現れます
+4. :guilabel:`Open In Browser` をクリックします、ハイパーリンクになっていて Web ブラウザが立ち上がります
+
+.. figure:: ../images/jupyter17.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+5. :guilabel:`test.ipynb` をクリックします
+
+.. figure:: ../images/jupyter18.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+6. PyCharm で打ち込んだプログラムが反映されています。 :guilabel:`▶ Run` で実行してみます
+
+.. figure:: ../images/jupyter19.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+7. 結果は PyCharm と同じになります
+
+.. figure:: ../images/jupyter19.png
+   :scale: 100
+   :align: left
+
+|clearboth|

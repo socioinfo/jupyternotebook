@@ -1,0 +1,412 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>3. PyCharm 環境の構築 &mdash; socio info 1.0 ドキュメント</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/mytheme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="検索" href="search.html" />
+    <link rel="next" title="4. JupyterNotebook を動かす" href="startjupyter.html" />
+    <link rel="prev" title="2. PyCharm と Anaconda のインストール" href="pycharm_install.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> socio info
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="preparation.html">1. 事前準備</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pycharm_install.html">2. PyCharm と Anaconda のインストール</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. PyCharm 環境の構築</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#anaconda">3.1. Anaconda 実行パスの設定</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#anaconda3">3.1.1. anaconda3 の検索のしかた</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">3.2. PyCharm の起動</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#python-python">3.3. Python プログラムファイルを置くディレクトリと Python バージョンの設定</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#conda-exe">3.3.1. _conda.exe の検索のしかた</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="startjupyter.html">4. JupyterNotebook を動かす</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fin.html">5. PyCharm の終了及び次へのステップ</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">socio info</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><span class="section-number">3. </span>PyCharm 環境の構築</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/pycharm_exec.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pycharm">
+<h1><span class="section-number">3. </span>PyCharm 環境の構築<a class="headerlink" href="#pycharm" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="anaconda">
+<span id="anaconda-path"></span><h2><span class="section-number">3.1. </span>Anaconda 実行パスの設定<a class="headerlink" href="#anaconda" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ol class="arabic simple">
+<li><p>スタートメニュー①を出します</p></li>
+<li><p>スタートメニューは <strong>ガン無視</strong> して、 <code class="docutils literal notranslate"><span class="pre">環境変数</span></code> と入力します②</p></li>
+<li><p><span class="guilabel">システム環境変数の編集</span> をクリックします③</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/path1.png"><img alt="_images/path1.png" src="_images/path1.png" style="width: 580.3px; height: 430.5px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="4">
+<li><p><span class="guilabel">システムのプロパティ</span> が開くので</p></li>
+<li><p><span class="guilabel">詳細設定</span> タブをクリックし ④</p></li>
+<li><p><span class="guilabel">環境設定</span> ⑤</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/path2.png"><img alt="_images/path2.png" src="_images/path2.png" style="width: 473.0px; height: 539.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="7">
+<li><p><strong>ユーザー環境変数（上の窓）</strong> <span class="guilabel">Path</span> をクリック</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/path3.png"><img alt="_images/path3.png" src="_images/path3.png" style="width: 611.0px; height: 579.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>下の窓（システム環境変数）にも <span class="guilabel">Path</span> があるので間違えないでください</p>
+</div>
+<ol class="arabic simple" start="8">
+<li><p><span class="guilabel">新規</span></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">anaconda3</span></code> を everything で検索して、フルパスをコピーペースト（Ctrl+V）、さらに末尾に <code class="docutils literal notranslate"><span class="pre">\Library\bin</span></code> を加える ⑨</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>everything での検索は <a class="reference internal" href="#search-anaconda3"><span class="std std-ref">anaconda3 の検索のしかた</span></a> (<a class="reference internal" href="#search-anaconda3"><span class="std std-numref">3.1.1 章</span></a>) を参照してください</p>
+</div>
+<ol class="arabic simple" start="10">
+<li><p><code class="docutils literal notranslate"><span class="pre">C:\Users\あなたの名前\AppData\Local\Programs\anaconda3\Library\bin</span></code> となっていればよい（ここでは <code class="docutils literal notranslate"><span class="pre">あなたの名前</span></code> が <code class="docutils literal notranslate"><span class="pre">16kcs</span></code>） ⑨</p></li>
+<li><p><span class="guilabel">OK</span> ⑩</p></li>
+<li><ol class="arabic simple" start="6">
+<li><p>と 4. で開いた <span class="guilabel">環境変数</span> と <span class="guilabel">システムのプロパティ</span> 窓の <span class="guilabel">OK</span> をクリックし閉じます</p></li>
+</ol>
+</li>
+<li><p><strong>サインアウトします</strong></p></li>
+<li><p>サインインします</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>Windows 3.1 時代から、システム環境変数はサインインしないと Windows が認識してくれないのは相変わらずです</p>
+</div>
+<div class="section" id="anaconda3">
+<span id="search-anaconda3"></span><h3><span class="section-number">3.1.1. </span>anaconda3 の検索のしかた<a class="headerlink" href="#anaconda3" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ol class="arabic simple">
+<li><p>タスクバーの <span class="guilabel">虫眼鏡アイコン</span> をクリックします</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/everything8.png"><img alt="_images/everything8.png" src="_images/everything8.png" style="width: 468.0px; height: 57.599999999999994px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="2">
+<li><p>小文字で <code class="docutils literal notranslate"><span class="pre">anaconda3</span></code> と入力し ①</p></li>
+<li><p>検索結果、小文字の <span class="guilabel">anaconda3</span> を <strong>右クリック</strong> ②</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/everything9.png"><img alt="_images/everything9.png" src="_images/everything9.png" style="width: 937.0px; height: 400.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="4">
+<li><p><span class="guilabel">フルパスをクリップボードにコピー</span> を選択</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/everything10.png"><img alt="_images/everything10.png" src="_images/everything10.png" style="width: 934.0px; height: 400.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+</div>
+</div>
+<div class="section" id="id1">
+<h2><span class="section-number">3.2. </span>PyCharm の起動<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ol class="arabic simple">
+<li><p>スタートメニュー①を出します</p></li>
+<li><p>スタートメニューは <strong>ガン無視</strong> して、 <code class="docutils literal notranslate"><span class="pre">pycharm</span></code> と入力します②</p></li>
+<li><p><span class="guilabel">Pycharm Professional</span> をクリックします ③</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/pycharm3.png"><img alt="_images/pycharm3.png" src="_images/pycharm3.png" style="width: 272.29999999999995px; height: 468.29999999999995px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="4">
+<li><p><span class="guilabel">Import PyCharm Settings</span> 画面がでてきたら、 <span class="guilabel">◎</span> Do not import settings ④ <span class="guilabel">OK</span> ⑤</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/pycharm4.png"><img alt="_images/pycharm4.png" src="_images/pycharm4.png" style="width: 372.0px; height: 164.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p><span class="guilabel">Import PyCharm Settings</span> 画面はでなくても問題ないです</p>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>New Project <span class="guilabel">+</span></p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/pycharm5.png"><img alt="_images/pycharm5.png" src="_images/pycharm5.png" style="width: 627.2px; height: 473.6px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+</div>
+<div class="section" id="python-python">
+<span id="pythondirectory"></span><h2><span class="section-number">3.3. </span>Python プログラムファイルを置くディレクトリと Python バージョンの設定<a class="headerlink" href="#python-python" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ol class="arabic simple">
+<li><p><span class="guilabel">Pure Pytyon</span> をクリック ①</p></li>
+<li><p>一番上の <span class="guilabel">Location:</span> は、Python プログラムファイルを保存するディレクトリです。変更したければ <span class="guilabel">📁</span> ②</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>よくわからなければ操作の必要はありません</p>
+</div>
+<ol class="arabic simple" start="3">
+<li><p><span class="guilabel">New environment using</span> <span class="guilabel">v Virtualenv</span> の右 <span class="guilabel">▼</span> をクリック ③</p></li>
+<li><p><span class="guilabel">〇 Conda</span> を選択 ④</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/pycharm6.png"><img alt="_images/pycharm6.png" src="_images/pycharm6.png" style="width: 789.0px; height: 585.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="5">
+<li><p><span class="guilabel">3.9</span> の右 <span class="guilabel">▼</span> をクリック ③</p></li>
+<li><p><span class="guilabel">3.8</span> を選択 ⑥ <a class="footnote-reference brackets" href="#id3" id="id2">1</a></p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/pycharm7.png"><img alt="_images/pycharm7.png" src="_images/pycharm7.png" style="width: 786.0px; height: 591.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="9">
+<li><p><code class="docutils literal notranslate"><span class="pre">_conda.exe</span></code> を everything で検索して、フルパスをコピーペースト（Ctrl+V）します ⑦</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>everything での検索は <a class="reference internal" href="#search-conda-exe"><span class="std std-ref">_conda.exe の検索のしかた</span></a> (<a class="reference internal" href="#search-conda-exe"><span class="std std-numref">3.3.1 章</span></a>) を参照してください</p>
+</div>
+<ol class="arabic simple" start="10">
+<li><p><span class="guilabel">Create</span> ⑧</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/pycharm8.png"><img alt="_images/pycharm8.png" src="_images/pycharm8.png" style="width: 784.0px; height: 596.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<dl class="footnote brackets">
+<dt class="label" id="id3"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
+<dd><div class="line-block">
+<div class="line">ここでは使用する Python のバージョンを選択しますが最新の 3.9 のひとつ前、3.8 を選択します。本日インストールした Anaconda3-2021.05 の 4 つ前のバージョン 2020.02 では、当時最新の 3.8 もインストールできましたが、 <br /> 「主要なOSSプロジェクトが 3.8 に未対応なためインストーラーは 3.7 にしていると書いてある。 → <a class="reference external" href="https://qiita.com/choshicure/items/880215b471893d333471">AnacondaでPython3.8を使う</a> 」 <br /> との記述があります。2021.05 も同様で、3.9 がいろいろ追い付いていないため 3.8 にしていると思われます。 <a class="reference external" href="https://qiita.com/sho1_24/items/306ff5d30b230b36de3a">Anaconda と Pythonのバージョン対応</a> によると、たしかに 2021.5 は Python 3.8 を前提として作成されていることがわかります。</div>
+</div>
+</dd>
+</dl>
+<div class="section" id="conda-exe">
+<span id="search-conda-exe"></span><h3><span class="section-number">3.3.1. </span>_conda.exe の検索のしかた<a class="headerlink" href="#conda-exe" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ol class="arabic simple">
+<li><p>タスクバーの <span class="guilabel">虫眼鏡アイコン</span> をクリックします</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/everything8.png"><img alt="_images/everything8.png" src="_images/everything8.png" style="width: 468.0px; height: 57.599999999999994px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="2">
+<li><p>小文字で <code class="docutils literal notranslate"><span class="pre">_conda.exe</span></code> と入力し ①</p></li>
+<li><p>検索結果、 <span class="guilabel">_conda.exe</span> を <strong>右クリック</strong> ②</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/everything9.png"><img alt="_images/everything9.png" src="_images/everything9.png" style="width: 937.0px; height: 400.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="4">
+<li><p><span class="guilabel">フルパスをクリップボードにコピー</span> を選択</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/everything10.png"><img alt="_images/everything10.png" src="_images/everything10.png" style="width: 934.0px; height: 400.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="startjupyter.html" class="btn btn-neutral float-right" title="4. JupyterNotebook を動かす" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="pycharm_install.html" class="btn btn-neutral float-left" title="2. PyCharm と Anaconda のインストール" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, yamachan.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

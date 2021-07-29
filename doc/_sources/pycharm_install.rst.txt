@@ -1,0 +1,202 @@
+.. |clearboth| raw:: html
+
+   <div style="clear:both;"></div>
+
+.. https://shirabeta.net/How-to-write-link-with-target-blank-in-reST.html#result2
+
+====================================
+ PyCharm と Anaconda のインストール
+====================================
+
+PyCharm インストール
+==============================
+
+JetBrains ToolBox のインストール
+--------------------------------
+
+さまざまな JetBrains 社製の IDE [#]_ を簡単にインストール、アップデートできます。
+
+1. `Jet Brains Toolbox App <https://www.jetbrains.com/ja-jp/toolbox-app/>`_ をダウンロードし
+2. ダウンロードしたファイルを実行します
+
+.. [#] IDE (Integrated Development Environment) は、ソフトウェアの統合的な開発環境であり、様々なツールの集合からなる → `統合開発環境 <https://ja.wikipedia.org/wiki/%E7%B5%B1%E5%90%88%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83>`_
+
+PyCharm Professional のインストール
+-----------------------------------
+
+1. タスクバーのJetBrains Toolbox 立方体アイコン①をクリックするとメニューが上に広がります
+2. PyCham Professional を :guilabel:`Install` します
+
+.. figure:: ../images/pycharm1.png
+   :scale: 75
+   :align: left
+
+|clearboth|
+
+.. note::
+   | PyCharm Professional はひと月のお試し期間後に有料となります。学生ならば無料となります（ac.jp ドメインのメールアドレスを持っていること）
+   | PyCharm Commnunity は誰でも無料で使えますが Anaconda 連携、Jupyter Notebook 連携など機能が削られています
+
+3. PyCharm Professional ダウンロード中の画面です。ダウンロードが終わったら、このままインストール中であることを表示します
+
+.. figure:: ../images/pycharm2.png
+   :scale: 120
+   :align: left
+
+|clearboth|
+
+Anaconda [#]_ のインストール
+============================
+
+.. [#] Anaconda(アナコンダ)とは、「データサイエンス」や「機械学習関連アプリケーション」のためのPythonおよびR言語用のディストリビューションです → `オープンソースのAnacondaとは <https://www.ossnews.jp/oss_info/Anaconda>`_
+
+.. _anaconda_download:
+
+ダウンロード
+------------
+
+1. `Individual Edition <https://www.anaconda.com/products/individual#windows>`_
+2. :guilabel:`Download` をクリック
+
+.. figure:: ../images/anaconda1.png
+   :scale: 75
+   :align: left
+
+|clearboth|
+
+3. :guilabel:`64-Bit Graphical Installer` をクリックするとダウンロードが始まる
+
+.. figure:: ../images/anaconda2.png
+   :scale: 75
+   :align: left
+
+|clearboth|
+
+インストール
+------------
+
+1. :ref:`anaconda_download` (:numref:`anaconda_download`) でダウンロードしたファイルを実行
+2. :guilabel:`Next`
+
+.. figure:: ../images/anaconda3.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+3. :guilabel:`I Agree`
+
+.. figure:: ../images/anaconda4.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+4. :guilabel:`Just Me (recommended)`  をクリック ①
+5. :guilabel:`Next` ②
+
+.. figure:: ../images/anaconda5.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+5.  :guilabel:`Browse`
+
+.. figure:: ../images/anaconda6.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+6. フォルダーの参照で :guilabel:`▷自分の名前`  (ここでは Takashi YAMAMOTO）の左 :guilabel:`▷` ③ をクリックして下の階層を広げる（広がると :guilabel:`▽` になる）
+7. 下の階層が開いたら下へスクロール ④
+
+.. figure:: ../images/anaconda7.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+8. 7. でスクロールすると、 :guilabel:`AppData` が現れるはず。 :guilabel:`▷AppData` の :guilabel:`▷` ⑤ をクリックして下の階層を広げる（広がると :guilabel:`▽` になる、⑤ はすでに広がっている状態）
+
+.. note::
+   :guilabel:`AppData` が見えないときは、 :ref:`explorer` (:numref:`explorer`)の設定がうまくいっていません。
+
+9. :guilabel:`AppData` のすぐ下 :guilabel:`▷Local` の :guilabel:`▷` ⑥ をクリックして下の階層を広げる（広がると :guilabel:`▽` になる、⑥ はすでに広がっている状態）
+10. 下へ :guilabel:`Programs` が見つかるまで下へスクロールさせる ⑦
+11. :guilabel:`Programs` が見つかったらクリック ⑧
+12. :guilabel:`新しいフォルダーの作成` をクリック ⑨
+
+.. figure:: ../images/anaconda8.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+13. :guilabel:`新しいフォルダー` が現れます、 **どこもクリックせず**
+
+.. figure:: ../images/anaconda9.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+14. ``新しいフォルダー`` の上から小文字で ``anaconda3`` と入力し⑩、Enter
+15. ``anaconda3`` ディレクトリができます
+
+.. figure:: ../images/anaconda10.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+16. :guilabel:`OK` で完了⑪
+17. ``C:\Users\あなたの名前\AppData\Local\Programs\anaconda3`` と入力されていることを確認します（ここでは ``あなたの名前`` が ``16kcs``）
+
+.. figure:: ../images/anaconda11.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+.. note::
+   うまくいっていないときは 7. からやりなおし。
+
+18. :guilabel:`Next` ⑬
+19. :guilabel:`□` Add Anaconda3 to my PATH environment variable ⑭ （チェック外す）
+20. :guilabel:`☑` Register Anaconda3 as my default Python 3.8 ⑮ （チェック）
+21. :guilabel:`Install` ⑯
+
+.. figure:: ../images/anaconda12.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+22. インストールが終わったら :guilabel:`Next` （5 分程度お待ちください）
+
+.. figure:: ../images/anaconda13.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+22. :guilabel:`Next` ここで説明されているように PyCham Pro は Anaconda 推奨なのです
+
+.. figure:: ../images/anaconda14.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+22. :guilabel:`□` Anaconda Individual Edition Tutorial ⑰ （チェック外す）
+23. :guilabel:`□` Getting Started with Anaconda ⑱ （チェック外す）
+24. :guilabel:`Finish` ⑲
+
+.. figure:: ../images/anaconda15.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+

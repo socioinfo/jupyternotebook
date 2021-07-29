@@ -1,0 +1,110 @@
+.. |clearboth| raw:: html
+
+   <div style="clear:both;"></div>
+
+.. https://shirabeta.net/How-to-write-link-with-target-blank-in-reST.html#result2
+
+========
+事前準備
+========
+
+.. _explorer:
+
+エクスプローラーで見えるファイルの設定変更
+==========================================
+
+1. Windows + E キーでエクスプローラーを起動
+
+   * インターネットエクスプローラーでは **ありません**
+2. :guilabel:`表示タブ` をクリック ①
+3. :guilabel:`オプション` をクリック ②
+
+.. figure:: ../images/explorer1.png
+   :scale: 75
+   :align: left
+
+|clearboth|
+
+4. :guilabel:`◎`  隠しファイル、隠しフォルダー、および隠しドライブを表示する ③
+5. 下へドラッグして、④
+6. :guilabel:`□`  登録している拡張子を表示しない ⑤
+7. :guilabel:`OK` をクリック ⑥
+
+.. figure:: ../images/explorer2.png
+   :scale: 80
+   :align: left
+
+|clearboth|
+
+ファイル検索 everything のインストール
+======================================
+
+1. `Everything 窓の杜 <https://forest.watch.impress.co.jp/library/software/everything/>`_ より Everything（64bit版） をダウンロード、実行
+2. :guilabel:`OK`
+
+.. figure:: ../images/everything1.png
+   :scale: 100
+   :align: left
+
+.. raw:: html
+
+   <div style="clear:both;"></div>
+
+3. :guilabel:`同意する`
+
+.. figure:: ../images/everything2.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+4. :guilabel:`次へ`
+
+.. figure:: ../images/everything3.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+5. :guilabel:`次へ`
+
+.. figure:: ../images/everything4.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+6. :guilabel:`インストール`
+
+.. figure:: ../images/everything5.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+7. ユーザーアカウント制御 :guilabel:`はい`
+
+.. figure:: ../images/everything6.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+8. :guilabel:`完了`
+
+.. figure:: ../images/everything7.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+検索開始
+--------
+
+タスクバーの :guilabel:`虫眼鏡アイコン` をクリックします。
+
+.. figure:: ../images/everything8.png
+   :scale: 120
+   :align: left
+
+|clearboth|

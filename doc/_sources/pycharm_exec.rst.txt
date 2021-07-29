@@ -1,0 +1,201 @@
+.. |clearboth| raw:: html
+
+   <div style="clear:both;"></div>
+
+.. https://shirabeta.net/How-to-write-link-with-target-blank-in-reST.html#result2
+
+.. |br| raw:: html
+
+   <br />
+
+====================
+ PyCharm 環境の構築
+====================
+
+.. _anaconda_path:
+
+Anaconda 実行パスの設定
+=======================
+
+1. スタートメニュー①を出します
+2. スタートメニューは **ガン無視** して、 ``環境変数`` と入力します②
+3. :guilabel:`システム環境変数の編集` をクリックします③
+
+.. figure:: ../images/path1.png
+   :scale: 70
+   :align: left
+
+|clearboth|
+
+4. :guilabel:`システムのプロパティ` が開くので
+5. :guilabel:`詳細設定` タブをクリックし ④
+6. :guilabel:`環境設定` ⑤
+
+.. figure:: ../images/path2.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+7. **ユーザー環境変数（上の窓）** :guilabel:`Path` をクリック
+
+.. figure:: ../images/path3.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+.. note::
+   下の窓（システム環境変数）にも :guilabel:`Path` があるので間違えないでください
+
+8. :guilabel:`新規`
+9. ``anaconda3`` を everything で検索して、フルパスをコピーペースト（Ctrl+V）、さらに末尾に ``\Library\bin`` を加える ⑨
+
+.. note::
+   everything での検索は :ref:`search_anaconda3` (:numref:`search_anaconda3`) を参照してください
+
+10. ``C:\Users\あなたの名前\AppData\Local\Programs\anaconda3\Library\bin`` となっていればよい（ここでは ``あなたの名前`` が ``16kcs``） ⑨
+11. :guilabel:`OK` ⑩
+12. 6. と 4. で開いた :guilabel:`環境変数` と :guilabel:`システムのプロパティ` 窓の :guilabel:`OK` をクリックし閉じます
+13. **サインアウトします**
+14. サインインします
+
+.. note::
+   Windows 3.1 時代から、システム環境変数はサインインしないと Windows が認識してくれないのは相変わらずです
+
+.. _search_anaconda3:
+
+anaconda3 の検索のしかた
+------------------------
+
+1. タスクバーの :guilabel:`虫眼鏡アイコン` をクリックします
+
+.. figure:: ../images/everything8.png
+   :scale: 120
+   :align: left
+
+|clearboth|
+
+2. 小文字で ``anaconda3`` と入力し ①
+3. 検索結果、小文字の :guilabel:`anaconda3` を **右クリック** ②
+
+.. figure:: ../images/everything9.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+4. :guilabel:`フルパスをクリップボードにコピー` を選択
+
+.. figure:: ../images/everything10.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+PyCharm の起動
+================
+
+1. スタートメニュー①を出します
+2. スタートメニューは **ガン無視** して、 ``pycharm`` と入力します②
+3. :guilabel:`Pycharm Professional` をクリックします ③
+
+.. figure:: ../images/pycharm3.png
+   :scale: 70
+   :align: left
+
+|clearboth|
+
+4. :guilabel:`Import PyCharm Settings` 画面がでてきたら、 :guilabel:`◎` Do not import settings ④ :guilabel:`OK` ⑤
+
+.. figure:: ../images/pycharm4.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+.. note::
+   :guilabel:`Import PyCharm Settings` 画面はでなくても問題ないです
+
+5. New Project :guilabel:`+`
+
+.. figure:: ../images/pycharm5.png
+   :scale: 80
+   :align: left
+
+|clearboth|
+
+.. _pythondirectory:
+
+Python プログラムファイルを置くディレクトリと Python バージョンの設定
+=====================================================================
+
+1. :guilabel:`Pure Pytyon` をクリック ①
+2. 一番上の :guilabel:`Location:` は、Python プログラムファイルを保存するディレクトリです。変更したければ :guilabel:`📁` ②
+
+.. note::
+   よくわからなければ操作の必要はありません
+
+3. :guilabel:`New environment using` :guilabel:`v Virtualenv` の右 :guilabel:`▼` をクリック ③
+4. :guilabel:`〇 Conda` を選択 ④
+
+.. figure:: ../images/pycharm6.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+5. :guilabel:`3.9` の右 :guilabel:`▼` をクリック ③
+6. :guilabel:`3.8` を選択 ⑥ [#]_
+
+.. figure:: ../images/pycharm7.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+9. ``_conda.exe`` を everything で検索して、フルパスをコピーペースト（Ctrl+V）します ⑦
+
+.. note::
+   everything での検索は :ref:`search_conda.exe` (:numref:`search_conda.exe`) を参照してください
+
+10. :guilabel:`Create` ⑧
+
+.. figure:: ../images/pycharm8.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+
+.. [#] | ここでは使用する Python のバージョンを選択しますが最新の 3.9 のひとつ前、3.8 を選択します。本日インストールした Anaconda3-2021.05 の 4 つ前のバージョン 2020.02 では、当時最新の 3.8 もインストールできましたが、 |br| 「主要なOSSプロジェクトが 3.8 に未対応なためインストーラーは 3.7 にしていると書いてある。 → `AnacondaでPython3.8を使う <https://qiita.com/choshicure/items/880215b471893d333471>`_ 」 |br| との記述があります。2021.05 も同様で、3.9 がいろいろ追い付いていないため 3.8 にしていると思われます。 `Anaconda と Pythonのバージョン対応 <https://qiita.com/sho1_24/items/306ff5d30b230b36de3a>`_ によると、たしかに 2021.5 は Python 3.8 を前提として作成されていることがわかります。
+
+.. _search_conda.exe:
+
+_conda.exe の検索のしかた
+-------------------------
+
+1. タスクバーの :guilabel:`虫眼鏡アイコン` をクリックします
+
+.. figure:: ../images/everything8.png
+   :scale: 120
+   :align: left
+
+|clearboth|
+
+2. 小文字で ``_conda.exe`` と入力し ①
+3. 検索結果、 :guilabel:`_conda.exe` を **右クリック** ②
+
+.. figure:: ../images/everything9.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+4. :guilabel:`フルパスをクリップボードにコピー` を選択
+
+.. figure:: ../images/everything10.png
+   :scale: 100
+   :align: left
+
+|clearboth|

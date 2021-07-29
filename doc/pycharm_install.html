@@ -1,0 +1,419 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ja" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>2. PyCharm と Anaconda のインストール &mdash; socio info 1.0 ドキュメント</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/mytheme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="検索" href="search.html" />
+    <link rel="next" title="3. PyCharm 環境の構築" href="pycharm_exec.html" />
+    <link rel="prev" title="1. 事前準備" href="preparation.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> socio info
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="preparation.html">1. 事前準備</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. PyCharm と Anaconda のインストール</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#pycharm">2.1. PyCharm インストール</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#jetbrains-toolbox">2.1.1. JetBrains ToolBox のインストール</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pycharm-professional">2.1.2. PyCharm Professional のインストール</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#anaconda">2.2. Anaconda  のインストール</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#anaconda-download">2.2.1. ダウンロード</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">2.2.2. インストール</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pycharm_exec.html">3. PyCharm 環境の構築</a></li>
+<li class="toctree-l1"><a class="reference internal" href="startjupyter.html">4. JupyterNotebook を動かす</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fin.html">5. PyCharm の終了及び次へのステップ</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">socio info</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li><span class="section-number">2. </span>PyCharm と Anaconda のインストール</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/pycharm_install.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pycharm-anaconda">
+<h1><span class="section-number">2. </span>PyCharm と Anaconda のインストール<a class="headerlink" href="#pycharm-anaconda" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="pycharm">
+<h2><span class="section-number">2.1. </span>PyCharm インストール<a class="headerlink" href="#pycharm" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="jetbrains-toolbox">
+<h3><span class="section-number">2.1.1. </span>JetBrains ToolBox のインストール<a class="headerlink" href="#jetbrains-toolbox" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>さまざまな JetBrains 社製の IDE <a class="footnote-reference brackets" href="#id2" id="id1">1</a> を簡単にインストール、アップデートできます。</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://www.jetbrains.com/ja-jp/toolbox-app/">Jet Brains Toolbox App</a> をダウンロードし</p></li>
+<li><p>ダウンロードしたファイルを実行します</p></li>
+</ol>
+<dl class="footnote brackets">
+<dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>IDE (Integrated Development Environment) は、ソフトウェアの統合的な開発環境であり、様々なツールの集合からなる → <a class="reference external" href="https://ja.wikipedia.org/wiki/%E7%B5%B1%E5%90%88%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83">統合開発環境</a></p>
+</dd>
+</dl>
+</div>
+<div class="section" id="pycharm-professional">
+<h3><span class="section-number">2.1.2. </span>PyCharm Professional のインストール<a class="headerlink" href="#pycharm-professional" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ol class="arabic simple">
+<li><p>タスクバーのJetBrains Toolbox 立方体アイコン①をクリックするとメニューが上に広がります</p></li>
+<li><p>PyCham Professional を <span class="guilabel">Install</span> します</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/pycharm1.png"><img alt="_images/pycharm1.png" src="_images/pycharm1.png" style="width: 509.25px; height: 725.25px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<div class="line-block">
+<div class="line">PyCharm Professional はひと月のお試し期間後に有料となります。学生ならば無料となります（ac.jp ドメインのメールアドレスを持っていること）</div>
+<div class="line">PyCharm Commnunity は誰でも無料で使えますが Anaconda 連携、Jupyter Notebook 連携など機能が削られています</div>
+</div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>PyCharm Professional ダウンロード中の画面です。ダウンロードが終わったら、このままインストール中であることを表示します</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/pycharm2.png"><img alt="_images/pycharm2.png" src="_images/pycharm2.png" style="width: 507.59999999999997px; height: 87.6px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+</div>
+</div>
+<div class="section" id="anaconda">
+<h2><span class="section-number">2.2. </span>Anaconda <a class="footnote-reference brackets" href="#id5" id="id4">2</a> のインストール<a class="headerlink" href="#anaconda" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<dl class="footnote brackets">
+<dt class="label" id="id5"><span class="brackets"><a class="fn-backref" href="#id4">2</a></span></dt>
+<dd><p>Anaconda(アナコンダ)とは、「データサイエンス」や「機械学習関連アプリケーション」のためのPythonおよびR言語用のディストリビューションです → <a class="reference external" href="https://www.ossnews.jp/oss_info/Anaconda">オープンソースのAnacondaとは</a></p>
+</dd>
+</dl>
+<div class="section" id="anaconda-download">
+<span id="id7"></span><h3><span class="section-number">2.2.1. </span>ダウンロード<a class="headerlink" href="#anaconda-download" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://www.anaconda.com/products/individual#windows">Individual Edition</a></p></li>
+<li><p><span class="guilabel">Download</span> をクリック</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/anaconda1.png"><img alt="_images/anaconda1.png" src="_images/anaconda1.png" style="width: 273.0px; height: 294.75px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="3">
+<li><p><span class="guilabel">64-Bit Graphical Installer</span> をクリックするとダウンロードが始まる</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/anaconda2.png"><img alt="_images/anaconda2.png" src="_images/anaconda2.png" style="width: 807.75px; height: 264.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+</div>
+<div class="section" id="id8">
+<h3><span class="section-number">2.2.2. </span>インストール<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="#anaconda-download"><span class="std std-ref">ダウンロード</span></a> (<a class="reference internal" href="#anaconda-download"><span class="std std-numref">2.2.1 章</span></a>) でダウンロードしたファイルを実行</p></li>
+<li><p><span class="guilabel">Next</span></p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/anaconda3.png"><img alt="_images/anaconda3.png" src="_images/anaconda3.png" style="width: 497.0px; height: 385.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="3">
+<li><p><span class="guilabel">I Agree</span></p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/anaconda4.png"><img alt="_images/anaconda4.png" src="_images/anaconda4.png" style="width: 495.0px; height: 384.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="4">
+<li><p><span class="guilabel">Just Me (recommended)</span>  をクリック ①</p></li>
+<li><p><span class="guilabel">Next</span> ②</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/anaconda5.png"><img alt="_images/anaconda5.png" src="_images/anaconda5.png" style="width: 495.0px; height: 382.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="5">
+<li><p><span class="guilabel">Browse</span></p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/anaconda6.png"><img alt="_images/anaconda6.png" src="_images/anaconda6.png" style="width: 496.0px; height: 383.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="6">
+<li><p>フォルダーの参照で <span class="guilabel">▷自分の名前</span>  (ここでは Takashi YAMAMOTO）の左 <span class="guilabel">▷</span> ③ をクリックして下の階層を広げる（広がると <span class="guilabel">▽</span> になる）</p></li>
+<li><p>下の階層が開いたら下へスクロール ④</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/anaconda7.png"><img alt="_images/anaconda7.png" src="_images/anaconda7.png" style="width: 370.0px; height: 360.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="8">
+<li><ol class="arabic simple" start="7">
+<li><p>でスクロールすると、 <span class="guilabel">AppData</span> が現れるはず。 <span class="guilabel">▷AppData</span> の <span class="guilabel">▷</span> ⑤ をクリックして下の階層を広げる（広がると <span class="guilabel">▽</span> になる、⑤ はすでに広がっている状態）</p></li>
+</ol>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p><span class="guilabel">AppData</span> が見えないときは、 <a class="reference internal" href="preparation.html#explorer"><span class="std std-ref">エクスプローラーで見えるファイルの設定変更</span></a> (<a class="reference internal" href="preparation.html#explorer"><span class="std std-numref">1.1 章</span></a>)の設定がうまくいっていません。</p>
+</div>
+<ol class="arabic simple" start="9">
+<li><p><span class="guilabel">AppData</span> のすぐ下 <span class="guilabel">▷Local</span> の <span class="guilabel">▷</span> ⑥ をクリックして下の階層を広げる（広がると <span class="guilabel">▽</span> になる、⑥ はすでに広がっている状態）</p></li>
+<li><p>下へ <span class="guilabel">Programs</span> が見つかるまで下へスクロールさせる ⑦</p></li>
+<li><p><span class="guilabel">Programs</span> が見つかったらクリック ⑧</p></li>
+<li><p><span class="guilabel">新しいフォルダーの作成</span> をクリック ⑨</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/anaconda8.png"><img alt="_images/anaconda8.png" src="_images/anaconda8.png" style="width: 709.0px; height: 482.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="13">
+<li><p><span class="guilabel">新しいフォルダー</span> が現れます、 <strong>どこもクリックせず</strong></p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/anaconda9.png"><img alt="_images/anaconda9.png" src="_images/anaconda9.png" style="width: 351.0px; height: 348.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="14">
+<li><p><code class="docutils literal notranslate"><span class="pre">新しいフォルダー</span></code> の上から小文字で <code class="docutils literal notranslate"><span class="pre">anaconda3</span></code> と入力し⑩、Enter</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">anaconda3</span></code> ディレクトリができます</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/anaconda10.png"><img alt="_images/anaconda10.png" src="_images/anaconda10.png" style="width: 367.0px; height: 360.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="16">
+<li><p><span class="guilabel">OK</span> で完了⑪</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">C:\Users\あなたの名前\AppData\Local\Programs\anaconda3</span></code> と入力されていることを確認します（ここでは <code class="docutils literal notranslate"><span class="pre">あなたの名前</span></code> が <code class="docutils literal notranslate"><span class="pre">16kcs</span></code>）</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/anaconda11.png"><img alt="_images/anaconda11.png" src="_images/anaconda11.png" style="width: 505.0px; height: 386.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>うまくいっていないときは 7. からやりなおし。</p>
+</div>
+<ol class="arabic simple" start="18">
+<li><p><span class="guilabel">Next</span> ⑬</p></li>
+<li><p><span class="guilabel">□</span> Add Anaconda3 to my PATH environment variable ⑭ （チェック外す）</p></li>
+<li><p><span class="guilabel">☑</span> Register Anaconda3 as my default Python 3.8 ⑮ （チェック）</p></li>
+<li><p><span class="guilabel">Install</span> ⑯</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/anaconda12.png"><img alt="_images/anaconda12.png" src="_images/anaconda12.png" style="width: 494.0px; height: 383.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="22">
+<li><p>インストールが終わったら <span class="guilabel">Next</span> （5 分程度お待ちください）</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/anaconda13.png"><img alt="_images/anaconda13.png" src="_images/anaconda13.png" style="width: 493.0px; height: 383.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="22">
+<li><p><span class="guilabel">Next</span> ここで説明されているように PyCham Pro は Anaconda 推奨なのです</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/anaconda14.png"><img alt="_images/anaconda14.png" src="_images/anaconda14.png" style="width: 497.0px; height: 385.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="22">
+<li><p><span class="guilabel">□</span> Anaconda Individual Edition Tutorial ⑰ （チェック外す）</p></li>
+<li><p><span class="guilabel">□</span> Getting Started with Anaconda ⑱ （チェック外す）</p></li>
+<li><p><span class="guilabel">Finish</span> ⑲</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/anaconda15.png"><img alt="_images/anaconda15.png" src="_images/anaconda15.png" style="width: 496.0px; height: 382.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="pycharm_exec.html" class="btn btn-neutral float-right" title="3. PyCharm 環境の構築" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="preparation.html" class="btn btn-neutral float-left" title="1. 事前準備" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, yamachan.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

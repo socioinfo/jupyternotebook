@@ -1,0 +1,28 @@
+.. socio info documentation master file, created by
+   sphinx-quickstart on Sun Jul 25 20:43:45 2021.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+.. |nbsp| unicode:: 0xA0 
+   :trim:
+
+Jupyter notebook 環境構築
+=========================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+   :numbered:
+
+   preparation
+   pycharm_install
+   pycharm_exec
+   startjupyter
+   fin
+
+* :ref:`genindex`
+* :ref:`search`
+
+.. sphinx 資料
+.. https://qiita.com/HRKN/items/7cf463497fd5f539255b 個人的なSphinx 利用術メモ
+.. https://planset-study-sphinx.readthedocs.io/ja/latest/04.html#id6

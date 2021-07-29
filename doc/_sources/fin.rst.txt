@@ -1,0 +1,55 @@
+.. |clearboth| raw:: html
+
+   <div style="clear:both;"></div>
+
+.. https://shirabeta.net/How-to-write-link-with-target-blank-in-reST.html#result2
+
+================================
+PyCharm の終了及び次へのステップ
+================================
+
+PyCharm の終了
+==============
+
+1. :guilabel:`File` ①
+2. :guilabel:`Exit` ②
+
+.. figure:: ../images/jupyter21.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+3. ``? Are you sure you want to exit`` でもう一度 :guilabel:`Exit`
+
+.. figure:: ../images/jupyter22.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+4. ``Do you want to terminate the process 'Jupyter Server' ?`` は :guilabel:`Terminate`
+
+.. figure:: ../images/jupyter23.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+w
+.. note::
+  :ref:`Jupyter_PyCharm` （:numref:`Jupyter_PyCharm`） :guilabel:`▶Run Cell` で立ち上げた Jupyter Notebook Web サーバーをここで :guilabel:`Terminate` します
+
+次へのステップ
+==============
+
+Python のデータ解析ライブラリ pandas パッケージのインストール
+
+1. :guilabel:`Python Packages` をクリック ①
+2. ``pandas`` を入力します
+3. :guilabel:`Install`
+
+.. figure:: ../images/pandas.png
+   :scale: 100
+   :align: left
+
+|clearboth|
