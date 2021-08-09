@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>2. PyCharm と Anaconda のインストール &mdash; socio info 1.0 ドキュメント</title>
+  <title>2. PyCharm と Anaconda のインストール &mdash; socio info 1.1 ドキュメント</title>
   
 
   
@@ -65,7 +65,7 @@
             
             
               <div class="version">
-                1.0
+                1.1
               </div>
             
           
@@ -102,13 +102,14 @@
 <li class="toctree-l2"><a class="reference internal" href="#anaconda">2.2. Anaconda  のインストール</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#anaconda-download">2.2.1. ダウンロード</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id8">2.2.2. インストール</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#anaconda-update">2.2.3. アップデート</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="pycharm_exec.html">3. PyCharm 環境の構築</a></li>
 <li class="toctree-l1"><a class="reference internal" href="startjupyter.html">4. JupyterNotebook を動かす</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fin.html">5. PyCharm の終了及び次へのステップ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fin.html">5. 参考</a></li>
 </ul>
 
             
@@ -312,7 +313,7 @@
 </div>
 <p><div style="clear:both;"></div></p>
 <ol class="arabic simple" start="14">
-<li><p><code class="docutils literal notranslate"><span class="pre">新しいフォルダー</span></code> の上から小文字で <code class="docutils literal notranslate"><span class="pre">anaconda3</span></code> と入力し⑩、Enter</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">新しいフォルダー</span></code> の上から小文字で <code class="docutils literal notranslate"><span class="pre">anaconda3</span></code> と入力し⑩ <code class="docutils literal notranslate"><span class="pre">⏎</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">anaconda3</span></code> ディレクトリができます</p></li>
 </ol>
 <div class="figure align-left">
@@ -362,6 +363,62 @@
 </ol>
 <div class="figure align-left">
 <a class="reference internal image-reference" href="_images/anaconda15.png"><img alt="_images/anaconda15.png" src="_images/anaconda15.png" style="width: 496.0px; height: 382.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+</div>
+<div class="section" id="anaconda-update">
+<span id="id9"></span><h3><span class="section-number">2.2.3. </span>アップデート<a class="headerlink" href="#anaconda-update" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p><a class="reference internal" href="#anaconda-download"><span class="std std-ref">ダウンロード</span></a> （ <a class="reference internal" href="#anaconda-download"><span class="std std-numref">2.2.1 章</span></a> ）では十把ひとからげにいろいろ入っている最新のインストールパッケージをダウンロードしましたが、当然、インストールパッケージが作られた時以降のアップデートは反映されていませんので、ここでインストールパッケージが作られた時刻以降のアップデートを行います。</p>
+<ol class="arabic simple">
+<li><p>スタートメニュー①を出します</p></li>
+<li><p>スタートメニューは <strong>ガン無視</strong> して、 <code class="docutils literal notranslate"><span class="pre">anaconda</span> <span class="pre">p</span></code> と入力します②</p></li>
+<li><p><span class="guilabel">Anaconda Prompt (anaconda3)</span> をクリックします③</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/anaconda16.png"><img alt="_images/anaconda16.png" src="_images/anaconda16.png" style="width: 408.09999999999997px; height: 725.9px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="3">
+<li><p>黒い画面がでてきます（ <code class="docutils literal notranslate"><span class="pre">16kcs</span></code> はご自身の名前になります）</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/anaconda16a.png"><img alt="_images/anaconda16a.png" src="_images/anaconda16a.png" style="width: 647.5px; height: 261.8px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="4">
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">base⏎</span></code> ④</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">update⏎</span></code> ⑤</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/anaconda17.png"><img alt="_images/anaconda17.png" src="_images/anaconda17.png" style="width: 648.1999999999999px; height: 275.79999999999995px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="6">
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">update</span> <span class="pre">--prefix</span></code> から <code class="docutils literal notranslate"><span class="pre">anaconda</span></code> まで左クリックしながらドラッグして白く反転させます</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/anaconda18.png"><img alt="_images/anaconda18.png" src="_images/anaconda18.png" style="width: 648.1999999999999px; height: 273.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div>
+7. 二回右クリックすると、ペーストされます</p>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/anaconda19.png"><img alt="_images/anaconda19.png" src="_images/anaconda19.png" style="width: 650.3px; height: 273.7px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="8">
+<li><p><code class="docutils literal notranslate"><span class="pre">⏎</span></code> でアップデートを開始します</p></li>
+<li><p>数分待つと何がアップデートされるのかごちゃごちゃでて、やっちゃっていいのか確認を求められます <span class="guilabel">Proceed ([y]/n)?</span> <code class="docutils literal notranslate"><span class="pre">y⏎</span></code></p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/anaconda20.png"><img alt="_images/anaconda20.png" src="_images/anaconda20.png" style="width: 649.5999999999999px; height: 273.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="10">
+<li><p>途中経過が延々でてきます。長くて 10 分程度待ちます</p></li>
+<li><p>done とでで ⑥ 入力待ちとなるので、 <code class="docutils literal notranslate"><span class="pre">exit⏎</span></code> で黒い画面を終了します ⑦</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/anaconda21.png"><img alt="_images/anaconda21.png" src="_images/anaconda21.png" style="width: 651.0px; height: 295.4px;" /></a>
 </div>
 <p><div style="clear:both;"></div></p>
 </div>

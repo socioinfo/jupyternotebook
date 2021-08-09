@@ -93,6 +93,8 @@ anaconda3 の検索のしかた
 
 |clearboth|
 
+.. _start_pycharm:
+
 PyCharm の起動
 ================
 
@@ -117,7 +119,56 @@ PyCharm の起動
 .. note::
    :guilabel:`Import PyCharm Settings` 画面はでなくても問題ないです
 
-5. New Project :guilabel:`+`
+5. （初回のみ）ライセンスに同意しなさいとでてくるので、一番下までスクロールすると :guilabel:`Accept` ボタンをクリックできるようになります
+
+.. figure:: ../images/pycharm4a.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+6. （初回のみ） :guilabel:`Accept`
+
+.. figure:: ../images/pycharm4b.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+7. （初回のみ）何を操作したかのログを JetBrains 社に送っていいか? と聞いてくるので :guilabel:`Don't send`
+
+.. figure:: ../images/pycharm4c.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+.. note::
+   （初回のみ）このあたりで、ライセンス認証の画面がでてくるようですが、 :guilabel:`Evaluate for free` を選択し① :guilabel:`Evaluate` ②
+
+.. figure:: ../images/pycharm4d.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+8. （初回のみ）好みのテーマ（色）を選択し①、 :guilabel:`Next: Featured plugins` ②
+
+.. figure:: ../images/pycharm4e.png
+   :scale: 80
+   :align: left
+
+|clearboth|
+
+9. （初回のみ）PyCharm の機能を拡張するお勧めプラグインをインストールするかどうか聞いてきますが、インストールせずに :guilabel:`Start using PyCharm` 
+
+.. figure:: ../images/pycharm4f.png
+   :scale: 80
+   :align: left
+
+|clearboth|
+
+10. New Project :guilabel:`+`
 
 .. figure:: ../images/pycharm5.png
    :scale: 80
@@ -130,14 +181,22 @@ PyCharm の起動
 Python プログラムファイルを置くディレクトリと Python バージョンの設定
 =====================================================================
 
-1. :guilabel:`Pure Pytyon` をクリック ①
-2. 一番上の :guilabel:`Location:` は、Python プログラムファイルを保存するディレクトリです。変更したければ :guilabel:`📁` ②
+1. New Project :guilabel:`+`
+
+.. figure:: ../images/pycharm5.png
+   :scale: 80
+   :align: left
+
+|clearboth|
+
+2. :guilabel:`Pure Pytyon` をクリック ①
+3. 一番上の :guilabel:`Location:` は、Python プログラムファイルを保存するディレクトリです。変更したければ :guilabel:`📁` ②
 
 .. note::
-   よくわからなければ操作の必要はありません
+   よくわからなければ変更の必要はありません
 
-3. :guilabel:`New environment using` :guilabel:`v Virtualenv` の右 :guilabel:`▼` をクリック ③
-4. :guilabel:`〇 Conda` を選択 ④
+4. :guilabel:`New environment using` :guilabel:`v Virtualenv` の右 :guilabel:`▼` をクリック ③
+5. :guilabel:`〇 Conda` を選択 ④
 
 .. figure:: ../images/pycharm6.png
    :scale: 100
@@ -145,8 +204,8 @@ Python プログラムファイルを置くディレクトリと Python バー�
 
 |clearboth|
 
-5. :guilabel:`3.9` の右 :guilabel:`▼` をクリック ③
-6. :guilabel:`3.8` を選択 ⑥ [#]_
+6. :guilabel:`3.9` の右 :guilabel:`▼` をクリック ③
+7. :guilabel:`3.8` を選択 ⑥ [#]_
 
 .. figure:: ../images/pycharm7.png
    :scale: 100
@@ -154,12 +213,12 @@ Python プログラムファイルを置くディレクトリと Python バー�
 
 |clearboth|
 
-9. ``_conda.exe`` を everything で検索して、フルパスをコピーペースト（Ctrl+V）します ⑦
+8. ``conda.exe`` を everything で検索して、二か所出てくるので下側の最後が ``Scripts`` で終わっている :guilabel:`conda.exe` フルパスをコピーペースト（Ctrl+V）します ⑦
 
 .. note::
    everything での検索は :ref:`search_conda.exe` (:numref:`search_conda.exe`) を参照してください
 
-10. :guilabel:`Create` ⑧
+9. :guilabel:`Create` ⑧
 
 .. figure:: ../images/pycharm8.png
    :scale: 100
@@ -172,7 +231,7 @@ Python プログラムファイルを置くディレクトリと Python バー�
 
 .. _search_conda.exe:
 
-_conda.exe の検索のしかた
+conda.exe の検索のしかた
 -------------------------
 
 1. タスクバーの :guilabel:`虫眼鏡アイコン` をクリックします
@@ -183,10 +242,10 @@ _conda.exe の検索のしかた
 
 |clearboth|
 
-2. 小文字で ``_conda.exe`` と入力し ①
-3. 検索結果、 :guilabel:`_conda.exe` を **右クリック** ②
+2. 小文字で ``conda.exe`` と入力し ①
+3. 検索結果二か所出るので下側の、  ``Scripts`` で終わっている② :guilabel:`conda.exe` を **右クリック** ③
 
-.. figure:: ../images/everything9.png
+.. figure:: ../images/everything11.png
    :scale: 100
    :align: left
 
@@ -194,7 +253,7 @@ _conda.exe の検索のしかた
 
 4. :guilabel:`フルパスをクリップボードにコピー` を選択
 
-.. figure:: ../images/everything10.png
+.. figure:: ../images/everything12.png
    :scale: 100
    :align: left
 

@@ -4,9 +4,38 @@
 
 .. https://shirabeta.net/How-to-write-link-with-target-blank-in-reST.html#result2
 
-================================
-PyCharm の終了及び次へのステップ
-================================
+====
+参考
+====
+
+.. _erase_project:
+
+PyCharm プロジェクトの消去
+==========================
+
+1. プロジェクトルートのディレクトリ名を控えます①
+
+   * everyhthing の :guilabel:`フルパスをクリップボードにコピー` を活用します
+   * プロジェクトルートとは → :ref:`Jupyter_PyCharm` （ :numref:`Jupyter_PyCharm` ） 注釈 1 （ブラウザで ``プロジェクトルート`` を検索してください）
+   * 画像の場合、控えるべきプロジェクトルートのディレクトリ名は ``C:\Users\16kcs\PycharmProject\pythonProject``
+
+2. :guilabel:`External Libraries` の下の :guilabel:`Python 3.8` のディレクトリを控えます（``python.exe`` は除く）②
+
+   * everyhthing の :guilabel:`フルパスをクリップボードにコピー` を活用します
+   * 画像の場合、控えるべき External Libraries のディレクトリ名は ``C:\Users\16kcs\.conda\env\pythonProject``
+
+.. figure:: ../images/jupyter24.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+3. PyCharm を終了します（ :numref:`exit_pycharm` ）
+4. 1. 2. で控えたのプロジェクトルートディレクトリと、 External Libraries のディレクトリをエクスプローラーで消去します
+
+   * everything で検索し、右クリック → 消去 でもかまいません
+
+.. _exit_pycharm:
 
 PyCharm の終了
 ==============
@@ -37,18 +66,185 @@ PyCharm の終了
 |clearboth|
 w
 .. note::
-  :ref:`Jupyter_PyCharm` （:numref:`Jupyter_PyCharm`） :guilabel:`▶Run Cell` で立ち上げた Jupyter Notebook Web サーバーをここで :guilabel:`Terminate` します
+
+   :ref:`Jupyter_PyCharm` （:numref:`Jupyter_PyCharm`） :guilabel:`▶Run Cell` で立ち上げた Jupyter Notebook Web サーバーをここで :guilabel:`Terminate` します
+
+.. _next_steps:
 
 次へのステップ
 ==============
 
+.. _install_pandas:
+
 Python のデータ解析ライブラリ pandas パッケージのインストール
+-------------------------------------------------------------
 
-1. :guilabel:`Python Packages` をクリック ①
-2. ``pandas`` を入力します
-3. :guilabel:`Install`
+1. :guilabel:`File` をクリック①
+2. :guilabel:`Settings...` ②
 
-.. figure:: ../images/pandas.png
+.. figure:: ../images/jupyter2.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+3. :guilabel:`Python Interpreter` ③
+4. みどり :guilabel:`〇` は後ろが白くなっていたら OK （なにもしない）④ 白くなっていなかったらクリックして白くさせる
+5. :guilabel:`+` ⑤
+
+.. figure:: ../images/jupyter3.png
+   :scale: 70
+   :align: left
+
+|clearboth|
+
+6. ごちゃごちゃ出てくるまで 30 秒程度待ちます
+
+.. figure:: ../images/pandas1.png
+   :scale: 70
+   :align: left
+
+|clearboth|
+
+
+7. ``pandas`` と入力（コピペしてください） ⑥
+8. :guilabel:`Description` が同様であることを確認してください ⑦
+
+.. note::
+   違っていたら ``pandas`` の綴りを確認してください
+
+14. :guilabel:`Install Package` ⑧
+
+.. figure:: ../images/pandas2.png
+   :scale: 70
+   :align: left
+
+|clearboth|
+
+15. 3. 以降で開いた窓を右上の :guilabel:`×` で全て閉じます（さっさ閉じてかまいません） 
+16. pandas のインストールは後ろで実行され、完了し次第、通知されます
+
+.. figure:: ../images/pandas3.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+.. _start_bottle:
+
+軽量 Web アプリケーション作成 bottle のインストールと動作確認
+-------------------------------------------------------------
+
+1. :ref:`install_pandas` （:numref:`install_pandas`） の pandas を bottle に置き換え bottle パッケージをインストールします、下図は途中経過
+
+.. warning::
+   下図にて ``bottle`` と入力しても :guilabel:`Description` が何もでないときは、 :ref:`install_jupyternotebook` （ :numref:`install_jupyternotebook` ）の 9. conda-forge レポジトリ設定ができていません
+
+.. figure:: ../images/bottle1.png
+   :scale: 70
+   :align: left
+
+|clearboth|
+
+2. :guilabel:`📁PythonProject` をクリック → :ref:`Jupyter_PyCharm` (:numref:`Jupyter_PyCharm`) と同じ操作です
+3. 次に :guilabel:`File`
+4. メニューの中から二つ目の :guilabel:`New..` ①
+5. :guilabel:`Python File` ②
+
+.. figure:: ../images/bottle2.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+6. :guilabel:`Python File` が青であればいいです ③
+7. ``test_bottle⏎`` ④
+
+.. figure:: ../images/bottle3.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+8. ``test_bottle.py`` というファイルができます
+
+.. figure:: ../images/bottle4.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+9. 次のプログラムをコピペします
+
+.. literalinclude:: bottle_test.py
+   :language: python
+   :linenos:
+
+.. figure:: ../images/bottle5.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+10. コピペしたプログラムの上のどこでもいいですから右クリックするとメニューがでてくるので
+11. :guilabel:`▶ Run 'test_bottle'` を選択するとプログラムが実行されます
+
+.. figure:: ../images/bottle6.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+12. 画面が上下に割れるので、下側の URL `http://localhost:8080 <http://localhost:8080>`_ をクリックします
+
+.. figure:: ../images/bottle7.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+13. Web ブラウザが立ち上がり、 :guilabel:`Error: 404 Not Found` と表示されます
+
+.. note::
+   これが正しい動作です
+
+.. figure:: ../images/bottle8.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+14. アドレスバーに `http://localhost:8080/hello/suzuki <http://localhost:8080/hello/suzuki>`_ ``⏎``
+
+.. figure:: ../images/bottle9.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+15. どこから、いつ、何を bottle Web サーバーにアクセスしたのか記録が残っています
+
+.. note::
+   | 12. の操作 → 127.0.0.1 - - [07/Aug/2021 11:10:34] "GET / HTTP/1.1" 404 720
+   | 14. の操作 → 127.0.0.1 - - [07/Aug/2021 11:15:43] "GET /hello/suzuki HTTP/1.1" 200 20
+
+.. figure:: ../images/bottle10.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+16. 割れた下画面 :guilabel:`test_bottle ×` の :guilabel:`×` をクリックして終わります
+
+.. figure:: ../images/bottle11.png
+   :scale: 100
+   :align: left
+
+|clearboth|
+
+16. 終わらせたいのか? と聞いてくるので :guilabel:`Terminate`
+
+.. figure:: ../images/bottle12.png
    :scale: 100
    :align: left
 

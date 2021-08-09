@@ -23,6 +23,18 @@ Jupyter notebook 環境構築
 * :ref:`genindex`
 * :ref:`search`
 
+2021/7/31 ご参加の皆様へ
+========================
+
+Jupyter Notebook の win32api エラーを回避するよう、手順をいれかえました。申しわけありませんが、いままでの設定をいったん消去する必要があります。次のように進めてください。
+
+1. :ref:`anaconda_update` （:numref:`anaconda_update`）
+2. :ref:`erase_project` （:numref:`erase_project`）
+3. :ref:`start_pycharm` （:numref:`start_pycharm`）
+4. :ref:`pythondirectory` （:numref:`pythondirectory`）
+5. :ref:`exit_pycharm` （:numref:`exit_pycharm`）
+6. :ref:`next_steps` （:numref:`next_steps`）
+
 .. sphinx 資料
 .. https://qiita.com/HRKN/items/7cf463497fd5f539255b 個人的なSphinx 利用術メモ
 .. https://planset-study-sphinx.readthedocs.io/ja/latest/04.html#id6

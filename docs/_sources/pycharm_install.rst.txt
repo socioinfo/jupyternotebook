@@ -142,7 +142,7 @@ Anaconda [#]_ のインストール
 
 |clearboth|
 
-14. ``新しいフォルダー`` の上から小文字で ``anaconda3`` と入力し⑩、Enter
+14. ``新しいフォルダー`` の上から小文字で ``anaconda3`` と入力し⑩ ``⏎``
 15. ``anaconda3`` ディレクトリができます
 
 .. figure:: ../images/anaconda10.png
@@ -200,3 +200,69 @@ Anaconda [#]_ のインストール
 
 |clearboth|
 
+.. _anaconda_update:
+
+アップデート
+------------
+
+:ref:`anaconda_download` （ :numref:`anaconda_download` ）では十把ひとからげにいろいろ入っている最新のインストールパッケージをダウンロードしましたが、当然、インストールパッケージが作られた時以降のアップデートは反映されていませんので、ここでインストールパッケージが作られた時刻以降のアップデートを行います。
+
+1. スタートメニュー①を出します
+2. スタートメニューは **ガン無視** して、 ``anaconda p`` と入力します②
+3. :guilabel:`Anaconda Prompt (anaconda3)` をクリックします③
+
+.. figure:: ../images/anaconda16.png
+   :scale: 70
+   :align: left
+
+|clearboth|
+
+3. 黒い画面がでてきます（ ``16kcs`` はご自身の名前になります）
+
+.. figure:: ../images/anaconda16a.png
+   :scale: 70
+   :align: left
+
+|clearboth|
+
+4. ``conda activate base⏎`` ④
+5. ``conda update⏎`` ⑤
+
+.. figure:: ../images/anaconda17.png
+   :scale: 70
+   :align: left
+
+|clearboth|
+
+6. ``conda update --prefix`` から ``anaconda`` まで左クリックしながらドラッグして白く反転させます
+
+.. figure:: ../images/anaconda18.png
+   :scale: 70
+   :align: left
+
+|clearboth|
+7. 二回右クリックすると、ペーストされます
+
+.. figure:: ../images/anaconda19.png
+   :scale: 70
+   :align: left
+
+|clearboth|
+
+8. ``⏎`` でアップデートを開始します
+9. 数分待つと何がアップデートされるのかごちゃごちゃでて、やっちゃっていいのか確認を求められます :guilabel:`Proceed ([y]/n)?` ``y⏎``
+
+.. figure:: ../images/anaconda20.png
+   :scale: 70
+   :align: left
+
+|clearboth|
+
+10. 途中経過が延々でてきます。長くて 10 分程度待ちます
+11. done とでで ⑥ 入力待ちとなるので、 ``exit⏎`` で黒い画面を終了します ⑦
+
+.. figure:: ../images/anaconda21.png
+   :scale: 70
+   :align: left
+
+|clearboth|

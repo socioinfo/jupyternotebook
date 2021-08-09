@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>5. PyCharm の終了及び次へのステップ &mdash; socio info 1.0 ドキュメント</title>
+  <title>5. 参考 &mdash; socio info 1.1 ドキュメント</title>
   
 
   
@@ -64,7 +64,7 @@
             
             
               <div class="version">
-                1.0
+                1.1
               </div>
             
           
@@ -95,9 +95,14 @@
 <li class="toctree-l1"><a class="reference internal" href="pycharm_install.html">2. PyCharm と Anaconda のインストール</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pycharm_exec.html">3. PyCharm 環境の構築</a></li>
 <li class="toctree-l1"><a class="reference internal" href="startjupyter.html">4. JupyterNotebook を動かす</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">5. PyCharm の終了及び次へのステップ</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">5.1. PyCharm の終了</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">5.2. 次へのステップ</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. 参考</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#pycharm">5.1. PyCharm プロジェクトの消去</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exit-pycharm">5.2. PyCharm の終了</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#next-steps">5.3. 次へのステップ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#python-pandas">5.3.1. Python のデータ解析ライブラリ pandas パッケージのインストール</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#web-bottle">5.3.2. 軽量 Web アプリケーション作成 bottle のインストールと動作確認</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -148,7 +153,7 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li><span class="section-number">5. </span>PyCharm の終了及び次へのステップ</li>
+      <li><span class="section-number">5. </span>参考</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -167,10 +172,45 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="pycharm">
-<h1><span class="section-number">5. </span>PyCharm の終了及び次へのステップ<a class="headerlink" href="#pycharm" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<div class="section" id="id1">
-<h2><span class="section-number">5.1. </span>PyCharm の終了<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+  <div class="section" id="id1">
+<h1><span class="section-number">5. </span>参考<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="pycharm">
+<span id="erase-project"></span><h2><span class="section-number">5.1. </span>PyCharm プロジェクトの消去<a class="headerlink" href="#pycharm" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ol class="arabic simple">
+<li><p>プロジェクトルートのディレクトリ名を控えます①</p>
+<ul class="simple">
+<li><p>everyhthing の <span class="guilabel">フルパスをクリップボードにコピー</span> を活用します</p></li>
+<li><p>プロジェクトルートとは → <a class="reference internal" href="startjupyter.html#jupyter-pycharm"><span class="std std-ref">PyCharm</span></a> （ <a class="reference internal" href="startjupyter.html#jupyter-pycharm"><span class="std std-numref">4.2.1 章</span></a> ） 注釈 1 （ブラウザで <code class="docutils literal notranslate"><span class="pre">プロジェクトルート</span></code> を検索してください）</p></li>
+<li><p>画像の場合、控えるべきプロジェクトルートのディレクトリ名は <code class="docutils literal notranslate"><span class="pre">C:\Users\16kcs\PycharmProject\pythonProject</span></code></p></li>
+</ul>
+</li>
+<li><p><span class="guilabel">External Libraries</span> の下の <span class="guilabel">Python 3.8</span> のディレクトリを控えます（<code class="docutils literal notranslate"><span class="pre">python.exe</span></code> は除く）②</p>
+<ul class="simple">
+<li><p>everyhthing の <span class="guilabel">フルパスをクリップボードにコピー</span> を活用します</p></li>
+<li><p>画像の場合、控えるべき External Libraries のディレクトリ名は <code class="docutils literal notranslate"><span class="pre">C:\Users\16kcs\.conda\env\pythonProject</span></code></p></li>
+</ul>
+</li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/jupyter24.png"><img alt="_images/jupyter24.png" src="_images/jupyter24.png" style="width: 1077.0px; height: 527.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic" start="3">
+<li><p>PyCharm を終了します（ <a class="reference internal" href="#exit-pycharm"><span class="std std-numref">5.2 章</span></a> ）</p></li>
+<li><ol class="arabic simple">
+<li><ol class="arabic simple" start="2">
+<li><p>で控えたのプロジェクトルートディレクトリと、 External Libraries のディレクトリをエクスプローラーで消去します</p></li>
+</ol>
+</li>
+</ol>
+<ul class="simple">
+<li><p>everything で検索し、右クリック → 消去 でもかまいません</p></li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="exit-pycharm">
+<span id="id2"></span><h2><span class="section-number">5.2. </span>PyCharm の終了<a class="headerlink" href="#exit-pycharm" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <ol class="arabic simple">
 <li><p><span class="guilabel">File</span> ①</p></li>
 <li><p><span class="guilabel">Exit</span> ②</p></li>
@@ -199,18 +239,187 @@ w
 </pre></div>
 </div>
 </div>
-<div class="section" id="id2">
-<h2><span class="section-number">5.2. </span>次へのステップ<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p>Python のデータ解析ライブラリ pandas パッケージのインストール</p>
+<div class="section" id="next-steps">
+<span id="id3"></span><h2><span class="section-number">5.3. </span>次へのステップ<a class="headerlink" href="#next-steps" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="python-pandas">
+<span id="install-pandas"></span><h3><span class="section-number">5.3.1. </span>Python のデータ解析ライブラリ pandas パッケージのインストール<a class="headerlink" href="#python-pandas" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <ol class="arabic simple">
-<li><p><span class="guilabel">Python Packages</span> をクリック ①</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">pandas</span></code> を入力します</p></li>
-<li><p><span class="guilabel">Install</span></p></li>
+<li><p><span class="guilabel">File</span> をクリック①</p></li>
+<li><p><span class="guilabel">Settings...</span> ②</p></li>
 </ol>
 <div class="figure align-left">
-<a class="reference internal image-reference" href="_images/pandas.png"><img alt="_images/pandas.png" src="_images/pandas.png" style="width: 1077.0px; height: 482.0px;" /></a>
+<a class="reference internal image-reference" href="_images/jupyter2.png"><img alt="_images/jupyter2.png" src="_images/jupyter2.png" style="width: 1080.0px; height: 529.0px;" /></a>
 </div>
 <p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="3">
+<li><p><span class="guilabel">Python Interpreter</span> ③</p></li>
+<li><p>みどり <span class="guilabel">〇</span> は後ろが白くなっていたら OK （なにもしない）④ 白くなっていなかったらクリックして白くさせる</p></li>
+<li><p><span class="guilabel">+</span> ⑤</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/jupyter3.png"><img alt="_images/jupyter3.png" src="_images/jupyter3.png" style="width: 756.0px; height: 588.6999999999999px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="6">
+<li><p>ごちゃごちゃ出てくるまで 30 秒程度待ちます</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/pandas1.png"><img alt="_images/pandas1.png" src="_images/pandas1.png" style="width: 753.9px; height: 549.5px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="7">
+<li><p><code class="docutils literal notranslate"><span class="pre">pandas</span></code> と入力（コピペしてください） ⑥</p></li>
+<li><p><span class="guilabel">Description</span> が同様であることを確認してください ⑦</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>違っていたら <code class="docutils literal notranslate"><span class="pre">pandas</span></code> の綴りを確認してください</p>
+</div>
+<ol class="arabic simple" start="14">
+<li><p><span class="guilabel">Install Package</span> ⑧</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/pandas2.png"><img alt="_images/pandas2.png" src="_images/pandas2.png" style="width: 747.5999999999999px; height: 546.6999999999999px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="15">
+<li><ol class="arabic simple" start="3">
+<li><p>以降で開いた窓を右上の <span class="guilabel">×</span> で全て閉じます（さっさ閉じてかまいません）</p></li>
+</ol>
+</li>
+<li><p>pandas のインストールは後ろで実行され、完了し次第、通知されます</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/pandas3.png"><img alt="_images/pandas3.png" src="_images/pandas3.png" style="width: 1077.0px; height: 466.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+</div>
+<div class="section" id="web-bottle">
+<span id="start-bottle"></span><h3><span class="section-number">5.3.2. </span>軽量 Web アプリケーション作成 bottle のインストールと動作確認<a class="headerlink" href="#web-bottle" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="#install-pandas"><span class="std std-ref">Python のデータ解析ライブラリ pandas パッケージのインストール</span></a> （<a class="reference internal" href="#install-pandas"><span class="std std-numref">5.3.1 章</span></a>） の pandas を bottle に置き換え bottle パッケージをインストールします、下図は途中経過</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>下図にて <code class="docutils literal notranslate"><span class="pre">bottle</span></code> と入力しても <span class="guilabel">Description</span> が何もでないときは、 <a class="reference internal" href="startjupyter.html#install-jupyternotebook"><span class="std std-ref">Jupyter パッケージのインストール</span></a> （ <a class="reference internal" href="startjupyter.html#install-jupyternotebook"><span class="std std-numref">4.1 章</span></a> ）の 9. conda-forge レポジトリ設定ができていません</p>
+</div>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/bottle1.png"><img alt="_images/bottle1.png" src="_images/bottle1.png" style="width: 753.9px; height: 557.9px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="2">
+<li><p><span class="guilabel">📁PythonProject</span> をクリック → <a class="reference internal" href="startjupyter.html#jupyter-pycharm"><span class="std std-ref">PyCharm</span></a> (<a class="reference internal" href="startjupyter.html#jupyter-pycharm"><span class="std std-numref">4.2.1 章</span></a>) と同じ操作です</p></li>
+<li><p>次に <span class="guilabel">File</span></p></li>
+<li><p>メニューの中から二つ目の <span class="guilabel">New..</span> ①</p></li>
+<li><p><span class="guilabel">Python File</span> ②</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/bottle2.png"><img alt="_images/bottle2.png" src="_images/bottle2.png" style="width: 1077.0px; height: 460.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="6">
+<li><p><span class="guilabel">Python File</span> が青であればいいです ③</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">test_bottle⏎</span></code> ④</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/bottle3.png"><img alt="_images/bottle3.png" src="_images/bottle3.png" style="width: 1077.0px; height: 464.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="8">
+<li><p><code class="docutils literal notranslate"><span class="pre">test_bottle.py</span></code> というファイルができます</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/bottle4.png"><img alt="_images/bottle4.png" src="_images/bottle4.png" style="width: 1077.0px; height: 463.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="9">
+<li><p>次のプログラムをコピペします</p></li>
+</ol>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bottle</span> <span class="kn">import</span> <span class="n">route</span><span class="p">,</span> <span class="n">run</span><span class="p">,</span> <span class="n">template</span>
+
+
+<span class="nd">@route</span><span class="p">(</span><span class="s1">&#39;/hello/&lt;name&gt;&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">index</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">template</span><span class="p">(</span><span class="s1">&#39;&lt;b&gt;Hello {{name}}&lt;/b&gt;!&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
+
+
+<span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s1">&#39;localhost&#39;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">8080</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/bottle5.png"><img alt="_images/bottle5.png" src="_images/bottle5.png" style="width: 1077.0px; height: 490.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="10">
+<li><p>コピペしたプログラムの上のどこでもいいですから右クリックするとメニューがでてくるので</p></li>
+<li><p><span class="guilabel">▶ Run 'test_bottle'</span> を選択するとプログラムが実行されます</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/bottle6.png"><img alt="_images/bottle6.png" src="_images/bottle6.png" style="width: 1077.0px; height: 463.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="12">
+<li><p>画面が上下に割れるので、下側の URL <a class="reference external" href="http://localhost:8080">http://localhost:8080</a> をクリックします</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/bottle7.png"><img alt="_images/bottle7.png" src="_images/bottle7.png" style="width: 1077.0px; height: 489.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="13">
+<li><p>Web ブラウザが立ち上がり、 <span class="guilabel">Error: 404 Not Found</span> と表示されます</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>これが正しい動作です</p>
+</div>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/bottle8.png"><img alt="_images/bottle8.png" src="_images/bottle8.png" style="width: 1077.0px; height: 335.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="14">
+<li><p>アドレスバーに <a class="reference external" href="http://localhost:8080/hello/suzuki">http://localhost:8080/hello/suzuki</a> <code class="docutils literal notranslate"><span class="pre">⏎</span></code></p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/bottle9.png"><img alt="_images/bottle9.png" src="_images/bottle9.png" style="width: 1077.0px; height: 169.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="15">
+<li><p>どこから、いつ、何を bottle Web サーバーにアクセスしたのか記録が残っています</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<div class="line-block">
+<div class="line">12. の操作 → 127.0.0.1 - - [07/Aug/2021 11:10:34] &quot;GET / HTTP/1.1&quot; 404 720</div>
+<div class="line">14. の操作 → 127.0.0.1 - - [07/Aug/2021 11:15:43] &quot;GET /hello/suzuki HTTP/1.1&quot; 200 20</div>
+</div>
+</div>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/bottle10.png"><img alt="_images/bottle10.png" src="_images/bottle10.png" style="width: 1077.0px; height: 488.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="16">
+<li><p>割れた下画面 <span class="guilabel">test_bottle ×</span> の <span class="guilabel">×</span> をクリックして終わります</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/bottle11.png"><img alt="_images/bottle11.png" src="_images/bottle11.png" style="width: 1077.0px; height: 488.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="16">
+<li><p>終わらせたいのか? と聞いてくるので <span class="guilabel">Terminate</span></p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/bottle12.png"><img alt="_images/bottle12.png" src="_images/bottle12.png" style="width: 619.0px; height: 171.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+</div>
 </div>
 </div>
 

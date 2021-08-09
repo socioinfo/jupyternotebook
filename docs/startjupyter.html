@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>4. JupyterNotebook を動かす &mdash; socio info 1.0 ドキュメント</title>
+  <title>4. JupyterNotebook を動かす &mdash; socio info 1.1 ドキュメント</title>
   
 
   
@@ -40,7 +40,7 @@
     
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="検索" href="search.html" />
-    <link rel="next" title="5. PyCharm の終了及び次へのステップ" href="fin.html" />
+    <link rel="next" title="5. 参考" href="fin.html" />
     <link rel="prev" title="3. PyCharm 環境の構築" href="pycharm_exec.html" /> 
 </head>
 
@@ -65,7 +65,7 @@
             
             
               <div class="version">
-                1.0
+                1.1
               </div>
             
           
@@ -104,7 +104,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="fin.html">5. PyCharm の終了及び次へのステップ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fin.html">5. 参考</a></li>
 </ul>
 
             
@@ -176,7 +176,7 @@
 <h1><span class="section-number">4. </span>JupyterNotebook を動かす<a class="headerlink" href="#jupyternotebook" title="このヘッドラインへのパーマリンク">¶</a></h1>
 <p>Python などを Web ブラウザ上で記述・実行できる環境 Jupyter Notebook を動かします。</p>
 <div class="section" id="jupyter">
-<h2><span class="section-number">4.1. </span>Jupyter パッケージのインストール<a class="headerlink" href="#jupyter" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<span id="install-jupyternotebook"></span><h2><span class="section-number">4.1. </span>Jupyter パッケージのインストール<a class="headerlink" href="#jupyter" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <ol class="arabic simple">
 <li><p>PyCharm はショートカットが異常に多いので起動のたびに Tip of the Day で紹介されます。一通り読んだら <span class="guilabel">Close</span></p></li>
 </ol>
@@ -185,30 +185,109 @@
 </div>
 <p><div style="clear:both;"></div></p>
 <ol class="arabic simple" start="2">
-<li><p><span class="guilabel">Python Packages</span> をクリック</p></li>
+<li><p><span class="guilabel">File</span> をクリック①</p></li>
+<li><p><span class="guilabel">Settings...</span> ②</p></li>
 </ol>
 <div class="figure align-left">
-<a class="reference internal image-reference" href="_images/jupyter2.png"><img alt="_images/jupyter2.png" src="_images/jupyter2.png" style="width: 1077.0px; height: 558.0px;" /></a>
+<a class="reference internal image-reference" href="_images/jupyter2.png"><img alt="_images/jupyter2.png" src="_images/jupyter2.png" style="width: 1080.0px; height: 529.0px;" /></a>
 </div>
 <p><div style="clear:both;"></div></p>
-<ol class="arabic simple" start="3">
-<li><p>画面が分割されるので</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">jupyter</span></code> を入力します ① （未確認だけど、ここから 7. にジャンプしてもいいはず）</p></li>
-<li><p>jupyter 文字が入ったパッケージがテキトーにしかもたくさんでてくるけど上下にスクロールさせ ②</p></li>
-<li><p><span class="guilabel">jupyter</span> そのものをクリック ③</p></li>
-<li><p><span class="guilabel">Install</span> ④</p></li>
+<ol class="arabic simple" start="4">
+<li><p><span class="guilabel">Python Interpreter</span> ③</p></li>
+<li><p>みどり <span class="guilabel">〇</span> は後ろが白くなっていたら OK （なにもしない）④ 白くなっていなかったらクリックして白くさせる</p></li>
+<li><p><span class="guilabel">+</span> ⑤</p></li>
 </ol>
 <div class="figure align-left">
-<a class="reference internal image-reference" href="_images/jupyter3.png"><img alt="_images/jupyter3.png" src="_images/jupyter3.png" style="width: 1077.0px; height: 556.0px;" /></a>
+<a class="reference internal image-reference" href="_images/jupyter3.png"><img alt="_images/jupyter3.png" src="_images/jupyter3.png" style="width: 756.0px; height: 588.6999999999999px;" /></a>
 </div>
 <p><div style="clear:both;"></div></p>
-<ol class="arabic simple" start="7">
-<li><p><span class="guilabel">ユーザーアカウント制御</span> は、 <span class="guilabel">はい</span></p></li>
+<blockquote>
+<div><ul class="simple">
+<li><p>みどり <span class="guilabel">〇</span> 後ろが白い状態 ⑥ ← この状態にしてください</p></li>
+</ul>
+</div></blockquote>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/jupyter3a.png"><img alt="_images/jupyter3a.png" src="_images/jupyter3a.png" style="width: 161.0px; height: 40.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>みどり <span class="guilabel">〇</span> 後ろが黒い状態 ⑦ ← 一度クリックして後ろを白くしてください</p></li>
+</ul>
+</div></blockquote>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/jupyter3b.png"><img alt="_images/jupyter3b.png" src="_images/jupyter3b.png" style="width: 159.0px; height: 39.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="6">
+<li><p>ごちゃごちゃ出てくるまで 30 秒程度待ちます⑧</p></li>
+<li><p><span class="guilabel">Manage Repositories</span> ⑨</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/jupyter3c.png"><img alt="_images/jupyter3c.png" src="_images/jupyter3c.png" style="width: 924.0px; height: 349.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="8">
+<li><p><span class="guilabel">＋</span></p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/jupyter3d.png"><img alt="_images/jupyter3d.png" src="_images/jupyter3d.png" style="width: 647.0px; height: 144.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="9">
+<li><p><code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> と入力⑩</p></li>
+<li><p><span class="guilabel">OK</span> ⑪</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/jupyter3e.png"><img alt="_images/jupyter3e.png" src="_images/jupyter3e.png" style="width: 327.0px; height: 133.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="11">
+<li><p><span class="guilabel">OK</span></p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/jupyter3f.png"><img alt="_images/jupyter3f.png" src="_images/jupyter3f.png" style="width: 599.0px; height: 159.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p><code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> が加わっています。今必要ではないのですけど、後で使う bottle パッケージをインストール（ <a class="reference internal" href="fin.html#start-bottle"><span class="std std-numref">5.3.2 章</span></a> ）するための準備を今のうちにしておきます</p>
+</div>
+<ol class="arabic simple" start="12">
+<li><p><code class="docutils literal notranslate"><span class="pre">jupyter</span></code> と入力（コピペしてください） ⑫</p></li>
+<li><p><span class="guilabel">Description</span> が同様であることを確認してください ⑬</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>違っていたら <code class="docutils literal notranslate"><span class="pre">jupyter</span></code> の綴りを確認してください</p>
+</div>
+<ol class="arabic simple" start="14">
+<li><p><span class="guilabel">Install Package</span> ⑭</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/jupyter3g.png"><img alt="_images/jupyter3g.png" src="_images/jupyter3g.png" style="width: 835.0px; height: 409.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="11">
+<li><p><span class="guilabel">ユーザーアカウント制御</span> が <strong>もしでてきたら、</strong> <span class="guilabel">はい</span></p></li>
 </ol>
 <div class="figure align-left">
 <a class="reference internal image-reference" href="_images/jupyter4.png"><img alt="_images/jupyter4.png" src="_images/jupyter4.png" style="width: 483.20000000000005px; height: 334.40000000000003px;" /></a>
 </div>
 <p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="12">
+<li><p><span class="guilabel">jupyter(installing)</span> の <span class="guilabel">(installing)</span> が消えたら jupyter のインストールは完了です</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/jupyter3h.png"><img alt="_images/jupyter3h.png" src="_images/jupyter3h.png" style="width: 674.4000000000001px; height: 334.40000000000003px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="13">
+<li><ol class="arabic simple" start="6">
+<li><p>以降で開いた窓を右上の <span class="guilabel">×</span> で全て閉じます</p></li>
+</ol>
+</li>
+</ol>
 </div>
 <div class="section" id="python-jupyter-notebook">
 <h2><span class="section-number">4.2. </span>Python プログラムを Jupyter Notebook 上で動かしてみます<a class="headerlink" href="#python-jupyter-notebook" title="このヘッドラインへのパーマリンク">¶</a></h2>
@@ -219,7 +298,7 @@
 </ol>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p><a class="reference internal" href="pycharm_exec.html#search-conda-exe"><span class="std std-ref">_conda.exe の検索のしかた</span></a> (<a class="reference internal" href="pycharm_exec.html#search-conda-exe"><span class="std std-numref">3.3.1 章</span></a>) の 2 で別フォルダを指定していたら、 <span class="guilabel">PythonProject</span> とは出てきません。そのときは、一番上の階層の  <span class="guilabel">📁</span> をクリックしましょう <a class="footnote-reference brackets" href="#id2" id="id1">1</a></p>
+<p><a class="reference internal" href="pycharm_exec.html#search-conda-exe"><span class="std std-ref">conda.exe の検索のしかた</span></a> (<a class="reference internal" href="pycharm_exec.html#search-conda-exe"><span class="std std-numref">3.3.1 章</span></a>) の 2 で別フォルダを指定していたら、 <span class="guilabel">PythonProject</span> とは出てきません。そのときは、一番上の階層の  <span class="guilabel">📁</span> をクリックしましょう <a class="footnote-reference brackets" href="#id2" id="id1">1</a></p>
 </div>
 <ol class="arabic simple" start="2">
 <li><p>次に <span class="guilabel">File</span> ②</p></li>
@@ -243,7 +322,7 @@
 </div>
 <p><div style="clear:both;"></div></p>
 <ol class="arabic simple" start="4">
-<li><p><code class="docutils literal notranslate"><span class="pre">test</span></code> と入力し Enter</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">test⏎</span></code></p></li>
 </ol>
 <div class="figure align-left">
 <a class="reference internal image-reference" href="_images/jupyter8.png"><img alt="_images/jupyter8.png" src="_images/jupyter8.png" style="width: 361.2px; height: 66.0px;" /></a>
@@ -263,47 +342,72 @@
 <div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello, </span><span class="si">{}</span><span class="s2">!&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>
 
-<span class="n">say_hello</span><span class="p">(</span><span class="s1">&#39;hage&#39;</span><span class="p">)</span>
+<span class="n">say_hello</span><span class="p">(</span><span class="s1">&#39;suzuki&#39;</span><span class="p">)</span>
+
 </pre></div>
 </td></tr></table></div>
 <ol class="arabic simple" start="7">
 <li><p><span class="guilabel">▶</span> をクリック ③ メニューが広がります</p></li>
 </ol>
 <div class="figure align-left">
-<a class="reference internal image-reference" href="_images/jupyter10.png"><img alt="_images/jupyter10.png" src="_images/jupyter10.png" style="width: 1077.0px; height: 361.0px;" /></a>
+<a class="reference internal image-reference" href="_images/jupyter10.png"><img alt="_images/jupyter10.png" src="_images/jupyter10.png" style="width: 1077.0px; height: 398.0px;" /></a>
 </div>
 <p><div style="clear:both;"></div></p>
 <ol class="arabic simple" start="8">
 <li><p><span class="guilabel">▶Run Cell</span> で実行しましょう</p></li>
 </ol>
 <div class="figure align-left">
-<a class="reference internal image-reference" href="_images/jupyter11.png"><img alt="_images/jupyter11.png" src="_images/jupyter11.png" style="width: 1077.0px; height: 460.0px;" /></a>
+<a class="reference internal image-reference" href="_images/jupyter11.png"><img alt="_images/jupyter11.png" src="_images/jupyter11.png" style="width: 1077.0px; height: 394.0px;" /></a>
 </div>
 <p><div style="clear:both;"></div></p>
 <ol class="arabic simple" start="9">
-<li><p>Jupyter Notebook Web サーバーが立ち上がります（後ほどみてみます）</p></li>
+<li><p>Jupyter Notebook Web サーバーが立ち上がります ④（後ほど立ち上がった Web サーバーを Web ブラウザでみてみます）</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hello,</span> <span class="pre">suzuki</span></code> が実行結果です。実行したプログラムの吹き出し直下に表示されます ⑤</p></li>
 </ol>
 <div class="figure align-left">
-<a class="reference internal image-reference" href="_images/jupyter12.png"><img alt="_images/jupyter12.png" src="_images/jupyter12.png" style="width: 1077.0px; height: 457.0px;" /></a>
-</div>
-<p><div style="clear:both;"></div></p>
-<ol class="arabic simple" start="10">
-<li><p><code class="docutils literal notranslate"><span class="pre">hello,</span> <span class="pre">suzuki</span></code> が実行結果です。実行したプログラムの吹き出し直下に表示されます ④</p></li>
-<li><p><span class="guilabel">Register project interpreter as a kernel</span> をクリックしてください ⑤</p></li>
-</ol>
-<div class="figure align-left">
-<a class="reference internal image-reference" href="_images/jupyter13.png"><img alt="_images/jupyter13.png" src="_images/jupyter13.png" style="width: 1077.0px; height: 459.0px;" /></a>
+<a class="reference internal image-reference" href="_images/jupyter12.png"><img alt="_images/jupyter12.png" src="_images/jupyter12.png" style="width: 1083.0px; height: 402.0px;" /></a>
 </div>
 <p><div style="clear:both;"></div></p>
 <div class="admonition warning">
 <p class="admonition-title">警告</p>
-<p><span class="guilabel">Register project interpreter as a kernel</span> をクリックした瞬間に下記の画面がでてくるときは <a class="reference internal" href="pycharm_exec.html#anaconda-path"><span class="std std-ref">Anaconda 実行パスの設定</span></a> (<a class="reference internal" href="pycharm_exec.html#anaconda-path"><span class="std std-numref">3.1 章</span></a>) の手順を間違えています。やり直しましょう</p>
+<p>ここで、 <span class="guilabel">win32api: 指定したプロ―シジャが見つかりません</span> が表示されたときは、いったん PyCharm プロジェクトを消去したあと （ <a class="reference internal" href="fin.html#erase-project"><span class="std std-ref">PyCharm プロジェクトの消去</span></a> （ <a class="reference internal" href="fin.html#erase-project"><span class="std std-numref">5.1 章</span></a> ）） <a class="reference internal" href="pycharm_exec.html#start-pycharm"><span class="std std-ref">PyCharm の起動</span></a> （ <a class="reference internal" href="pycharm_exec.html#start-pycharm"><span class="std std-numref">3.2 章</span></a> ）からやり直してください。おそらく、 <a class="reference internal" href="#install-jupyternotebook"><span class="std std-ref">Jupyter パッケージのインストール</span></a> （ <a class="reference internal" href="#install-jupyternotebook"><span class="std std-numref">4.1 章</span></a> ）の手順 5. で、後ろが白くなっていません</p>
 </div>
 <div class="figure align-left">
-<a class="reference internal image-reference" href="_images/jupyter14.png"><img alt="_images/jupyter14.png" src="_images/jupyter14.png" style="width: 622.0px; height: 381.0px;" /></a>
+<a class="reference internal image-reference" href="_images/jupyter13.png"><img alt="_images/jupyter13.png" src="_images/jupyter13.png" style="width: 821.6px; height: 340.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="11">
+<li><p><span class="guilabel">Register project interpreter as a kernel</span> がもしでてきたらクリックします</p></li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/jupyter14.png"><img alt="_images/jupyter14.png" src="_images/jupyter14.png" style="width: 1077.0px; height: 395.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="12">
+<li><p><span class="guilabel">Register project interpreter as a kernel</span> がもしでてきたらクリックします</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>ここで、下画像のように <span class="guilabel">zmq</span> がらみのエラーが表示されるときは、 <a class="reference internal" href="pycharm_install.html#anaconda-update"><span class="std std-ref">アップデート</span></a> （ <a class="reference internal" href="pycharm_install.html#anaconda-update"><span class="std std-numref">2.2.3 章</span></a> ）を再度行ってください</p>
+</div>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/jupyter14a.png"><img alt="_images/jupyter14a.png" src="_images/jupyter14a.png" style="width: 622.0px; height: 381.0px;" /></a>
+</div>
+<p><div style="clear:both;"></div></p>
+<ol class="arabic simple" start="13">
+<li><p>もし 12. を実行したら</p>
+<ol class="arabic simple">
+<li><p>💡 をクリックします ⑥ メニューがずらずらっと出るので</p></li>
+<li><p><span class="guilabel">■ Stop Jupyter Server</span> を選択します⑦</p></li>
+</ol>
+</li>
+</ol>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/jupyter14b.png"><img alt="_images/jupyter14b.png" src="_images/jupyter14b.png" style="width: 1077.0px; height: 464.0px;" /></a>
 </div>
 <p><div style="clear:both;"></div></p>
 <div class="admonition note">
@@ -311,9 +415,9 @@
 <p><span class="guilabel">Windows セキュリティの重要な警告</span> は次のように対処します。</p>
 </div>
 <ol class="arabic simple" start="12">
-<li><p><span class="guilabel">☑</span> プライベートネットワーク（ホームネットワークや社内ネットワークなど） ⑥</p></li>
-<li><p><span class="guilabel">□</span> パブリックネットワーク（空港、喫茶店など）（非推奨） ⑦</p></li>
-<li><p><span class="guilabel">アクセスを許可する</span> ⑧</p></li>
+<li><p><span class="guilabel">☑</span> プライベートネットワーク（ホームネットワークや社内ネットワークなど） ⑧</p></li>
+<li><p><span class="guilabel">□</span> パブリックネットワーク（空港、喫茶店など）（非推奨） ⑨</p></li>
+<li><p><span class="guilabel">アクセスを許可する</span> ⑩</p></li>
 </ol>
 <div class="figure align-left">
 <a class="reference internal image-reference" href="_images/jupyter15.png"><img alt="_images/jupyter15.png" src="_images/jupyter15.png" style="width: 613.0px; height: 432.0px;" /></a>
@@ -375,7 +479,7 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="fin.html" class="btn btn-neutral float-right" title="5. PyCharm の終了及び次へのステップ" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="fin.html" class="btn btn-neutral float-right" title="5. 参考" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="pycharm_exec.html" class="btn btn-neutral float-left" title="3. PyCharm 環境の構築" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
